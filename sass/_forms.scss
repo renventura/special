@@ -1,0 +1,61 @@
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	background: $color__grey;
+	color: $color__text-input;
+	border: 1px solid darken($color__grey, 10%);
+	border-radius: 3px;
+	padding: 10px;
+
+	&:focus {
+		color: $color__text-input-focus;
+	}
+}
+
+select {
+	border: 1px solid $color__border-input;
+}
+
+textarea {
+	width: 100%;
+}
+
+.button,
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: none;
+	background: $color__background-button;
+	color: #fff;
+	line-height: 1;
+	padding: 20px;
+
+	&:hover {
+		background: lighten($color__background-button, 10%);
+	}
+}
+
+.button.cta-button {
+	display: inline-block;
+	color: #fff;
+	@include gradient();
+	padding: 25px 40px;
+}
+
+.button.button-round {
+	border-radius: 300px;
+}

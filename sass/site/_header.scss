@@ -1,0 +1,97 @@
+.admin-bar #logo_nav_wrap {
+	top: 46px;
+	@include r(1024) {
+		top: 32px;
+	}
+}
+
+#masthead {
+
+	&:after {
+		content: " ";
+		position: absolute;
+		z-index: -1;
+		width: 100%;
+		height: 500px;
+		top: 180%;
+		left: 0;
+		-webkit-transform: skewY(-12deg);
+		transform: skewY(-12deg);
+		@include gradient();
+	}
+}
+
+#logo_nav_wrap {
+	display: flex;
+	flex-direction: row;
+	align-items: center; // Pin child elements to bottom
+	padding: 10px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	z-index: 999;
+	@include r(1024) {
+		padding: $common-padding;
+	}
+
+	&.stuck {
+		background: #fff;
+		padding: 10px $common-padding;
+		position: fixed;
+	}
+}
+
+#logo {
+	align-self: flex-start;
+	max-width: 250px;
+	@include r(1024) { // Above 1024px
+		display: inline-block;
+	}
+}
+
+body.custom-logo {
+	.site-title,
+	.site-description {
+		position: absolute;
+		left: -999999px;
+	}
+}
+
+.site-title {
+	margin-top: 0;
+}
+
+.site-description {
+	margin: 0;
+}
+
+#hero {
+	padding: 100px 0;
+	@include r(1024) {
+		padding: 200px;
+	}
+	z-index: 0;
+
+	#hero_title,
+	#hero_content {
+		color: #fff;
+		position: relative;
+		text-align: center;
+		z-index: 9;
+	}
+
+	#hero_title {
+		@include font-size(2);
+		@include r(1024) { // Above 1024px
+			@include font-size(4);
+		}
+	}
+
+	#hero_content {
+		@include font-size(1);
+		@include r(1024) { // Above 1024px
+			@include font-size(2);
+		}
+	}
+}
