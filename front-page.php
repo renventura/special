@@ -74,7 +74,7 @@ get_header(); ?>
 				
 			</div>
 
-			<div class="section full-width centered">
+			<div id="work" class="section full-width centered">
 
 				<div class="content">
 
@@ -159,7 +159,7 @@ get_header(); ?>
 
 			</div>
 
-			<div class="section" style="text-align: center;">
+			<div id="contact" class="section" style="text-align: center;">
 				
 				<div class="content">
 					
