@@ -126,6 +126,13 @@
 	margin-bottom: 0;
 }
 
+.project {
+	margin-bottom: 50px;
+	@include r(1024) {
+		margin-bottom: 0;
+	}
+}
+
 .map {
 	width: 100%;
 }
