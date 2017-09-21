@@ -4353,12 +4353,13 @@ object {
 #logo {
 	-ms-flex-item-align: start;
 	    align-self: flex-start;
-	max-width: 250px;
+	max-width: 175px;
 }
 
 @media (min-width: 1024px) {
 	#logo {
 		display: inline-block;
+		max-width: 250px;
 	}
 }
 
