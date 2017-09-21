@@ -40,7 +40,7 @@ get_header(); ?>
 
 						<div class="image one-third top">
 
-							<img src="http://localhost:8888/personal/wp-content/uploads/2017/09/headshot.png" alt="">
+							<img src="https://renventura.com/wp-content/uploads/2017/09/headshot-frames.png" alt="">
 							
 						</div>
 
