@@ -4502,6 +4502,11 @@ body.custom-logo .site-description {
 	margin: 30px 0;
 }
 
+.icons svg {
+	height: 100px;
+	width: 100px;
+}
+
 .sticky {
 	display: block;
 }

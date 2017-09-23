@@ -54,19 +54,21 @@ get_header(); ?>
 
 				<div class="content">
 					
-					<h2 class="section-title">Skills &amp; Experience</h2>
+					<h2 class="section-title">Skilled. Experienced.</h2>
 
 					<h4 class="section-subtitle">
-						Some tools I've worked with over the years.
+						Some modern tools I've worked with over the years.
 					</h4>
 
-					<div class="wow fadeInUp">
+					<div class="wow fadeInUp icons">
+
+						<p>HTML5/CSS3, JavaScript, PHP, Email Design, WordPress and WooCommerce</p>
 						
-						<p>HTML5 &amp; CSS3</p>
-						<p>Email Design</p>
-						<p>JavaScript</p>
-						<p>PHP, Java</p>
-						<p>WordPress &amp; WooCommerce</p>
+						<?php include_once 'images/html5.svg'; ?>
+						<?php include_once 'images/javascript.svg'; ?>
+						<?php include_once 'images/php.svg'; ?>
+						<?php include_once 'images/wordpress.svg'; ?>
+						<?php include_once 'images/woocommerce.svg'; ?>
 
 					</div>
 
