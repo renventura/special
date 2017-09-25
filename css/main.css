@@ -344,10 +344,6 @@ a {
 	text-decoration: none;
 }
 
-a:visited {
-	color: #2D8EFD;
-}
-
 a:hover {
 	color: #60a9fd;
 }
@@ -542,8 +538,17 @@ input[type="submit"]:hover {
 	padding: 25px 40px;
 }
 
+.button.cta-button:hover {
+	color: #fff;
+}
+
 .button.button-round {
 	border-radius: 300px;
+}
+
+.button.readmore {
+	display: inline-block;
+	margin: 20px 0;
 }
 
 /*--------------------------------------------------------------
@@ -4356,13 +4361,12 @@ object {
 #logo {
 	-ms-flex-item-align: start;
 	    align-self: flex-start;
-	max-width: 175px;
+	max-width: 50px;
 }
 
 @media (min-width: 1024px) {
 	#logo {
 		display: inline-block;
-		max-width: 250px;
 	}
 }
 
@@ -4596,25 +4600,29 @@ body.custom-logo .site-description {
 	font-size: 20px;
 }
 
-.alert-warning {
+.alert.alert-warning {
 	background-color: #FFFBCC;
 	border: 1px solid #FFFAB2;
 }
 
-.alert-success {
+.alert.alert-success {
 	background-color: #C0FFA7;
 	border-color: #92FF66;
 }
 
-.alert-error {
+.alert.alert-error {
 	background-color: #FFBCBC;
 	border-color: #FF7F7F;
 	color: #000;
 }
 
-.alert-info {
+.alert.alert-info {
 	background-color: #d9edf7;
 	border-color: #bce8f1;
+}
+
+.entry-title a {
+	color: inherit;
 }
 
 /*--------------------------------------------------------------

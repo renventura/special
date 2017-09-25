@@ -78,17 +78,16 @@ a {
 	color: $color__link;
 	text-decoration: none;
 
-	&:visited {
-		color: $color__link-visited;
-	}
 	&:hover {
 		color: lighten($color__link, 10%);
 	}
+
 	&:hover,
 	&:focus,
 	&:active {
 		color: $color__link-hover;
 	}
+	
 	&:focus,
 	&:active {
 		border-bottom: 1px dotted $color__link;

@@ -55,8 +55,17 @@ input[type="submit"] {
 	color: #fff;
 	@include gradient();
 	padding: 25px 40px;
+
+	&:hover {
+		color: #fff;
+	}
 }
 
 .button.button-round {
 	border-radius: 300px;
+}
+
+.button.readmore {
+	display: inline-block;
+	margin: 20px 0;
 }
