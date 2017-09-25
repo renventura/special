@@ -4347,6 +4347,8 @@ object {
 
 #logo_nav_wrap.stuck {
 	background: #fff;
+	-webkit-box-shadow: 0 3px 5px 0px #dce5f6;
+	        box-shadow: 0 3px 5px 0px #dce5f6;
 	padding: 10px 30px;
 	position: fixed;
 }

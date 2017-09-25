@@ -37,6 +37,7 @@
 
 	&.stuck {
 		background: #fff;
+		box-shadow: 0 3px 5px 0px darken($color__grey, 5%);
 		padding: 10px $common-padding;
 		position: fixed;
 	}
