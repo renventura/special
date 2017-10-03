@@ -135,10 +135,43 @@
 	margin-bottom: 0;
 }
 
-.project {
-	margin-bottom: 50px;
-	@include r(1024) {
-		margin-bottom: 0;
+.projects {
+	
+	.project {
+		margin-bottom: 50px;
+		@include r(1024) {
+			margin-bottom: 0;
+		}
+
+		.archive-terms {
+			@include font-size(.8);
+		}
+
+		.portfolio-category {
+			color: $color__text-main;
+			display: inline-block;
+			background: $color__grey;
+			border-radius: 3px;
+			padding: 10px;
+			text-align: center;
+			margin: 20px auto;
+
+			&:before {
+				content: '#';
+			}
+		}
+	}
+
+	&.archive-projects {
+
+		.row {
+			align-items: start;
+		}
+
+		.archive-title {
+			margin-top: 0;
+			text-align: left;
+		}
 	}
 }
 

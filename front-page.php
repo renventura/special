@@ -83,7 +83,7 @@ get_header(); ?>
 					<h2 class="section-title">Recent Work</h2>
 
 					<h4 class="section-subtitle">
-						Here are a few of my projects for you to take a look.
+						Here are a few of my projects for you to take a look. <a href="<?php echo get_home_url( null, '/projects' ); ?>">View More Projects</a>
 					</h4>
 					
 					<?php

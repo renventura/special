@@ -94,7 +94,7 @@
 
 					<?php elseif ( is_archive() ) : ?>
 
-						<?php the_archive_title( '<h2 id="hero_title">', '</h2>' ); ?>
+						<h2 id="hero_title"><?php echo str_ireplace( array( ': ', 'archive', 'category' ), '', get_the_archive_title() ); ?></h2>
 						<?php the_archive_description( '<div id="hero_content">', '</div>' ); ?>
 
 					<?php endif; ?>

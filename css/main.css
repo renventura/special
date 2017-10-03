@@ -4573,14 +4573,44 @@ body.custom-logo .site-description {
 	margin-bottom: 0;
 }
 
-.project {
+.projects .project {
 	margin-bottom: 50px;
 }
 
 @media (min-width: 1024px) {
-	.project {
+	.projects .project {
 		margin-bottom: 0;
 	}
+}
+
+.projects .project .archive-terms {
+	font-size: 12.8px;
+	font-size: 0.8rem;
+}
+
+.projects .project .portfolio-category {
+	color: #404040;
+	display: inline-block;
+	background: #F0F4FB;
+	border-radius: 3px;
+	padding: 10px;
+	text-align: center;
+	margin: 20px auto;
+}
+
+.projects .project .portfolio-category:before {
+	content: '#';
+}
+
+.projects.archive-projects .row {
+	-webkit-box-align: start;
+	    -ms-flex-align: start;
+	        align-items: start;
+}
+
+.projects.archive-projects .archive-title {
+	margin-top: 0;
+	text-align: left;
 }
 
 .map {
