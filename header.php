@@ -94,8 +94,13 @@
 
 					<?php elseif ( is_archive() ) : ?>
 
-						<h2 id="hero_title"><?php echo str_ireplace( array( ': ', 'archive', 'category' ), '', get_the_archive_title() ); ?></h2>
-						<?php the_archive_description( '<div id="hero_content">', '</div>' ); ?>
+						<?php if ( is_archive( 'portfolio' ) && ! is_tax( 'portfolio_cat' ) ) : ?>
+							<h2 id="hero_title">Portfolio</h2>
+							<div id="hero_content">Some projects I've worked on over the years.</div>
+						<?php else: ?>
+							<h2 id="hero_title"><?php echo str_ireplace( array( ': ', 'archive', 'category' ), '', get_the_archive_title() ); ?></h2>
+							<?php the_archive_description( '<div id="hero_content">', '</div>' ); ?>
+						<?php endif; ?>
 
 					<?php endif; ?>
 
