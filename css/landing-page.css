@@ -29,29 +29,20 @@
  * @link    https://github.com/ahmadawais/ReSass.git
  * @version 1.0.0
  */
-#iphone-imessage {
-	position: relative;
+.landing-page .landing-section {
+	padding: 100px;
 }
 
-#iphone-imessage:before {
-	background-image: url("../images/iphone-imessage.svg");
-	background-repeat: no-repeat;
-	content: " ";
-	display: block;
-	-webkit-transform: rotate(12deg);
-	        transform: rotate(12deg);
-	-webkit-transform-origin: 100% 0;
-	        transform-origin: 100% 0;
-	height: 300px;
-	padding: 0;
-	margin-left: 50px;
+.landing-page #content_wrapper {
+	margin: 0;
+	max-width: 100%;
+	width: 100%;
 }
 
-@media (min-width: 1024px) {
-	#iphone-imessage:before {
-		position: absolute;
-		left: 0;
-		top: -200px;
-		padding: 300px;
-	}
+.landing-page #masthead:after {
+	display: none;
+}
+
+.landing-page #logo_nav_wrap {
+	position: static;
 }

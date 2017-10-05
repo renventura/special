@@ -62,6 +62,9 @@ gulp.task('frontPageStyles', function() {
 gulp.task('wooStyles', function() {
 	generateCSS( 'sass/woocommerce.scss', 'woocommerce.css', 'woocommerce.min.css' );
 });
+gulp.task('landingStyles', function() {
+	generateCSS( 'sass/landing-page.scss', 'landing-page.css', 'landing-page.min.css' );
+});
 
 /**
  *	Images task
@@ -81,12 +84,13 @@ gulp.task('watch', function() {
 	gulp.watch('js/components/*.js', ['scripts']);
 	gulp.watch('sass/**/*.scss', ['globalStyles']);
 	gulp.watch('sass/front-page.scss', ['frontPageStyles']);
+	gulp.watch('sass/landing-page.scss', ['landingStyles']);
 	gulp.watch('images', ['images']);
 });
 
 /**
  *	Default task
  */
-gulp.task('default', ['scripts','globalStyles','frontPageStyles','wooStyles','images','watch']);
+gulp.task('default', ['scripts','globalStyles','frontPageStyles','wooStyles','landingStyles','images','watch']);
 
 

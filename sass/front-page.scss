@@ -1,0 +1,25 @@
+@import "variables/variables-site";
+@import "mixins";
+
+#iphone-imessage {
+	position: relative;
+
+	&:before {
+		background-image: url('../images/iphone-imessage.svg');
+		background-repeat: no-repeat;
+		content: " ";
+		display: block;
+		transform: rotate(12deg);
+		transform-origin: 100% 0;
+		height: 300px;
+		padding: 0;
+		margin-left: 50px;
+
+		@include r(1024) {
+			position: absolute;
+			left: 0;
+			top: -200px;
+			padding: 300px;
+		}
+	}
+}

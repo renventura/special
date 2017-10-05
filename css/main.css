@@ -4444,6 +4444,13 @@ body.custom-logo .site-description {
 	}
 }
 
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 9999;
+}
+
 .section {
 	background: #fff;
 	-webkit-box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.15);
@@ -4458,13 +4465,6 @@ body.custom-logo .site-description {
 		padding: 100px 0;
 		margin-bottom: 100px;
 	}
-}
-
-.section .content {
-	max-width: 800px;
-	margin: 0 auto;
-	position: relative;
-	z-index: 9999;
 }
 
 .section.full-width {

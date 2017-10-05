@@ -1,0 +1,23 @@
+@import "variables/variables-site";
+@import "mixins";
+
+.landing-page {
+
+	.landing-section {
+		padding: 100px;
+	}
+
+	#content_wrapper {
+		margin: 0;
+		max-width: 100%;
+		width: 100%;
+	}
+
+	#masthead:after {
+		display: none;
+	}
+
+	#logo_nav_wrap {
+		position: static;
+	}
+}

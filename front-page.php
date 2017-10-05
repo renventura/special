@@ -33,7 +33,7 @@ get_header(); ?>
 							</h4>
 
 							<p class="wow fadeInUp">
-								I develop web and software solutions for complexities facing modern businesses. I live for what I do. When I'm not "working", I'm either learning new skills, or cooking (and eating, of course).
+								I develop web and software solutions to solve complexities for modern organizations. My primary goal is to put more money in your pocket by developing technology solutions that fit your business.
 							</p>
 
 						</div>
@@ -57,15 +57,16 @@ get_header(); ?>
 					<h2 class="section-title">Skilled. Experienced.</h2>
 
 					<h4 class="section-subtitle">
-						Some modern tools I've worked with over the years.
+						Over five years of experience with...
 					</h4>
 
 					<div class="wow fadeInUp icons">
 
-						<p>HTML5/CSS3, JavaScript, PHP, Email Design, WordPress and WooCommerce</p>
+						<p>HTML5/CSS3, JavaScript, PHP, SQL, Email Design, WordPress and WooCommerce</p>
 						
 						<?php include_once 'images/html5.svg'; ?>
 						<?php include_once 'images/javascript.svg'; ?>
+						<?php include_once 'images/mysql.svg'; ?>
 						<?php include_once 'images/php.svg'; ?>
 						<?php include_once 'images/wordpress.svg'; ?>
 						<?php include_once 'images/woocommerce.svg'; ?>
@@ -130,6 +131,23 @@ get_header(); ?>
 
 				</div>
 				
+			</div>
+
+			<div class="section full-width centered">
+				<div class="content">
+					<div class="row">
+						<div class="one-half first">
+							<div id="iphone-imessage"></div>
+						</div>
+						<div class="one-half">
+							<h2 class="section-title">Why Me?</h2>
+							<h4 class="section-subtitle">
+								Personal. Practical. Results-driven.
+							</h4>
+							When you need attention, you get it right from the person handling the project. I'm not an agency, so I don't have project managers, or customer service people. I work hand-in-hand with my clients to deliver quality results with a personalized experience.
+						</div>
+					</div>
+				</div>
 			</div>
 
 			<div class="section full-width">

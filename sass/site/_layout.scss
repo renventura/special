@@ -21,6 +21,13 @@
 	
 }
 
+.content {
+	max-width: 800px;
+	margin: 0 auto;
+	position: relative;
+	z-index: 9999;
+}
+
 .section {
 	background: #fff;
 	box-shadow: 0 0 50px 5px rgba(0,0,0,.15);
@@ -30,13 +37,6 @@
 	@include r(1024) {
 		padding: 100px 0;
 		margin-bottom: 100px;
-	}
-
-	.content {
-		max-width: 800px;
-		margin: 0 auto;
-		position: relative;
-		z-index: 9999;
 	}
 
 	&.full-width {

@@ -117,3 +117,131 @@ function special_post_archive_thumbnail() {
 }
 
 endif;
+
+
+
+if ( ! function_exists( 'special_header_hero' ) ) :
+
+/**
+ *	Output the post thumbnail
+ */
+function special_header_hero( $args ) { ?>
+
+	<div id="hero" class="backstretch overlay" style="background-image: url('<?php echo $args['thumbnail']; ?>')">
+		
+		<div id="hero_wrap">
+
+			<?php if ( is_front_page() ) : ?>
+
+				<h2 id="hero_title">Ren Ventura</h2>
+				
+				<div id="hero_content">Software Developer. Problem solver.</div>
+
+			<?php elseif ( is_singular() ) : ?>
+
+				<div id="hero_content">
+					<?php the_excerpt(); ?>
+				</div>
+
+			<?php elseif ( is_home() ) : ?>
+
+				<h2 id="hero_title">The Blog</h2>
+
+			<?php elseif ( is_archive() ) : ?>
+
+				<?php if ( is_archive( 'portfolio' ) && ! is_tax( 'portfolio_cat' ) ) : ?>
+					<h2 id="hero_title">Portfolio</h2>
+					<div id="hero_content">Some projects I've worked on over the years.</div>
+				<?php else: ?>
+					<h2 id="hero_title"><?php echo str_ireplace( array( ': ', 'archive', 'category' ), '', get_the_archive_title() ); ?></h2>
+					<?php the_archive_description( '<div id="hero_content">', '</div>' ); ?>
+				<?php endif; ?>
+
+			<?php endif; ?>
+
+		</div>
+
+	</div>
+	
+<?php }
+add_action( 'special_header_end', 'special_header_hero' );
+
+endif;
+
+
+
+if ( ! function_exists( 'special_logo_nav' ) ) :
+
+function special_logo_nav() { ?>
+
+	<div id="logo_nav_wrap" data-sticky-header="enabled">
+		
+		<div id="logo" class="site-branding">
+			<?php
+			the_custom_logo();
+			if ( is_front_page() && is_home() ) : ?>
+				<h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
+			<?php else : ?>
+				<p class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></p>
+			<?php
+			endif;
+
+			$description = get_bloginfo( 'description', 'display' );
+			if ( $description || is_customize_preview() ) : ?>
+				<p class="site-description"><?php echo $description; /* WPCS: xss ok. */ ?></p>
+			<?php
+			endif; ?>
+		</div><!-- .site-branding -->
+
+		<nav id="site-navigation" class="main-navigation">
+			<button id="open-offcanvas" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Menu', 'special' ); ?></button>
+			<?php
+				wp_nav_menu( array(
+					'theme_location' => 'menu-1',
+					'menu_id'        => 'primary_menu',
+				) );
+			?>
+		</nav><!-- #site-navigation -->
+
+	</div>
+
+<?php }
+add_action( 'special_header_start', 'special_logo_nav' );
+
+endif;
+
+
+
+if ( ! function_exists( 'special_footer' ) ) :
+
+function special_footer() { ?>
+
+	<div class="pre-footer">
+		<h3><?php _e( 'Ready to dicsuss your business?', 'personaltheme' ); ?></h3>
+		<p>Let's talk about putting web and mobile technology to work for you.</p>
+		<a href="/#contact" class="button button-round cta-button"><?php _e( 'Get In Touch', 'personaltheme' ); ?></a>
+	</div>
+
+	<footer id="colophon" class="site-footer">
+		<div class="site-info">
+			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'special' ) ); ?>"><?php
+				/* translators: %s: CMS name, i.e. WordPress. */
+				printf( esc_html__( 'Proudly powered by %s', 'special' ), 'WordPress' );
+			?></a>
+			<span class="sep"> | </span>
+			<?php
+				/* translators: 1: Theme name, 2: Theme author. */
+				printf( esc_html__( 'Theme: %1$s by %2$s.', 'special' ), 'special', '<a href="https://renventura.com">Ren Ventura</a>' );
+			?>
+		</div><!-- .site-info -->
+	</footer><!-- #colophon -->
+
+<?php }
+add_action( 'special_footer', 'special_footer' );
+
+endif;
+
+
+
+
+
