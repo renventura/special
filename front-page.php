@@ -150,7 +150,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section full-width centered">
+			<div id="services" class="section full-width centered">
 				<div class="content">
 					<h2 class="section-title">Custom Solutions</h2>
 					<h4 class="section-subtitle">
