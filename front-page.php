@@ -150,6 +150,32 @@ get_header(); ?>
 				</div>
 			</div>
 
+			<div class="section full-width centered">
+				<div class="content">
+					<h2 class="section-title">Custom Solutions</h2>
+					<h4 class="section-subtitle">
+						Services tailored for modern businesses
+					</h4>
+					<div class="row">
+						<div class="one-third first">
+							<div class="service-icon"><?php include_once 'images/web-design.svg'; ?></div>
+							<h3 class="service-title">Web Solutions</h3>
+							As a business owner/manager, you are focused on saving money, and making more of it. Whether it's a client portal that lets you cut back on tedious client management, or a booking system that lets you schedule more consultations, I can help you determine what web-based technology will help you achieve your goals.
+						</div>
+						<div class="one-third">
+							<div class="service-icon"><?php include_once 'images/ecommerce.svg'; ?></div>
+							<h3 class="service-title">E-Commerce Solutions</h3>
+							Want to accept payment for your products or services online? E-commerce applications are more important than ever. 80% of Americans make online purchases, and 15% do so on a weekly basis. With younger generations, these numbers will only continue to rise. Make sure your business keeps up with modern purchasing trends.
+						</div>
+						<div class="one-third">
+							<div class="service-icon"><?php include_once 'images/seo.svg'; ?></div>
+							<h3 class="service-title">Digital Marketing</h3>
+							Digital and online marketing is all about using modern technology to reach your target customers. Once you know who your ideal customer is, your next move is to map out a plan for getting your business in front of them. This requires creating a solid brand, creating content your customers want, providing value, and much more.
+						</div>
+					</div>
+				</div>
+			</div>
+
 			<div class="section full-width">
 				<iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d6120069.22736771!2d-86.18829027705978!3d41.49744701508516!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8830ef2ee3686b2d%3A0xed04cb55f7621842!2sCleveland%2C+OH!5e0!3m2!1sen!2sus!4v1504892025277" width="800" height="600" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>

@@ -218,8 +218,8 @@ function special_footer() { ?>
 
 	<div class="pre-footer">
 		<h3><?php _e( 'Ready to dicsuss your business?', 'personaltheme' ); ?></h3>
-		<p>Let's talk about putting web and mobile technology to work for you.</p>
-		<a href="/#contact" class="button button-round cta-button"><?php _e( 'Get In Touch', 'personaltheme' ); ?></a>
+		<p>Let's figure out a way for you to meet your goals.</p>
+		<a href="/#contact" class="button button-round cta-button"><?php _e( 'Send Me a Message', 'personaltheme' ); ?></a>
 	</div>
 
 	<footer id="colophon" class="site-footer">

@@ -23,3 +23,13 @@
 		}
 	}
 }
+
+.service-title {
+	@include font-size(1.6);
+	text-align: center;
+}
+
+.service-icon {
+	max-width: 200px;
+	margin: 0 auto;
+}
