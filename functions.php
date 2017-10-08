@@ -132,7 +132,7 @@ function special_scripts() {
 
 	if ( is_front_page() ) {
 		wp_enqueue_style( 'front-page', get_stylesheet_directory_uri() . '/css/front-page.min.css' );
-		wp_enqueue_script( 'typeit', '//cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js', array('jquery'), '4.4.0', true );
+		// wp_enqueue_script( 'typeit', '//cdn.jsdelivr.net/jquery.typeit/4.4.0/typeit.min.js', array('jquery'), '4.4.0', true );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'special_scripts' );
