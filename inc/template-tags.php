@@ -7,6 +7,19 @@
  * @package Special_Theme
  */
 
+if ( ! function_exists( 'special_breadcrumbs' ) ) :
+
+	/**
+	 * Print out breadcrumns, supported by Yoast SEO plugin
+	 */
+	function special_breadcrumbs() {
+		if ( function_exists( 'yoast_breadcrumb' ) ) {
+			yoast_breadcrumb( '<div id="breadcrumbs">',' </div> ');
+		}
+	}
+
+endif;
+
 if ( ! function_exists( 'special_posted_on' ) ) :
 	/**
 	 * Prints HTML with meta information for the current post-date/time and author.

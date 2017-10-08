@@ -18,6 +18,7 @@
 			<header class="entry-header">
 				<?php
 					if ( is_singular() ) :
+						special_breadcrumbs();
 						the_title( '<h1 class="entry-title">', '</h1>' );
 					else :
 						// special_post_archive_thumbnail();

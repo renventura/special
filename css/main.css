@@ -4508,6 +4508,10 @@ body.custom-logo .site-description {
 	margin: 30px 0;
 }
 
+#breadcrumbs {
+	text-align: center;
+}
+
 .icons svg {
 	height: 125px;
 	width: 125px;
