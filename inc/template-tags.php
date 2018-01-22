@@ -148,7 +148,7 @@ function special_header_hero( $args ) { ?>
 
 				<h2 id="hero_title">Ren Ventura</h2>
 				
-				<div id="hero_content">Software Developer. Problem solver.</div>
+				<div id="hero_content">Web Developer. Problem solver.</div>
 
 			<?php elseif ( is_singular() ) : ?>
 

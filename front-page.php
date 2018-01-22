@@ -152,25 +152,41 @@ get_header(); ?>
 
 			<div id="services" class="section full-width centered">
 				<div class="content">
-					<h2 class="section-title">Custom Solutions</h2>
-					<h4 class="section-subtitle">
-						Services tailored for modern businesses
-					</h4>
 					<div class="row">
-						<div class="one-third first">
-							<div class="service-icon"><?php include_once 'images/web-design.svg'; ?></div>
-							<h3 class="service-title">Web Solutions</h3>
+						<div class="text two-thirds first">
+							<h4 class="section-title">Web Solutions</h4>
 							As a business owner/manager, you are focused on saving money, and making more of it. Whether it's a client portal that lets you cut back on tedious client management, or a booking system that lets you schedule more consultations, I can help you determine what web-based technology will help you achieve your goals.
 						</div>
-						<div class="one-third">
-							<div class="service-icon"><?php include_once 'images/ecommerce.svg'; ?></div>
-							<h3 class="service-title">E-Commerce Solutions</h3>
+						<div class="image top one-third">
+							<?php include_once 'images/web-design.svg'; ?>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="section full-width centered">
+				<div class="content">
+					<div class="row">
+						<div class="image top one-third first">
+							<?php include_once 'images/ecommerce.svg'; ?>
+						</div>
+						<div class="text two-thirds">
+							<h4 class="section-title">E-Commerce Solutions</h4>
 							Want to accept payment for your products or services online? E-commerce applications are more important than ever. 80% of Americans make online purchases, and 15% do so on a weekly basis. With younger generations, these numbers will only continue to rise. Make sure your business keeps up with modern purchasing trends.
 						</div>
-						<div class="one-third">
-							<div class="service-icon"><?php include_once 'images/seo.svg'; ?></div>
-							<h3 class="service-title">Digital Marketing</h3>
+					</div>
+				</div>
+			</div>
+
+			<div class="section full-width centered">
+				<div class="content">
+					<div class="row">
+						<div class="text two-thirds first">
+							<h4 class="section-title">Digital Marketing</h4>
 							Digital and online marketing is all about using modern technology to reach your target customers. Once you know who your ideal customer is, your next move is to map out a plan for getting your business in front of them. This requires creating a solid brand, creating content your customers want, providing value, and much more.
+						</div>
+						<div class="image top one-third">
+							<?php include_once 'images/seo.svg'; ?>
 						</div>
 					</div>
 				</div>
