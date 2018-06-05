@@ -140,8 +140,7 @@ figure {
 }
 
 hr {
-	-webkit-box-sizing: content-box;
-	        box-sizing: content-box;
+	box-sizing: content-box;
 	height: 0;
 }
 
@@ -201,8 +200,7 @@ input {
 
 input[type="checkbox"],
 input[type="radio"] {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 	padding: 0;
 }
 
@@ -249,16 +247,14 @@ th {
 # Basic HTML elements
 --------------------------------------------------------------*/
 html {
-	-webkit-box-sizing: border-box;
-	        box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 *,
 *:before,
 *:after {
 	/* Inherit box-sizing to make it easier to change the property for components that leverage other behavior; see http://css-tricks.com/inheriting-box-sizing-probably-slightly-better-best-practice/ */
-	-webkit-box-sizing: inherit;
-	        box-sizing: inherit;
+	box-sizing: inherit;
 }
 
 body {
@@ -568,8 +564,7 @@ input[type="submit"]:hover {
 .screen-reader-text:focus {
 	background-color: #f1f1f1;
 	border-radius: 3px;
-	-webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
-	        box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+	box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
 	clip: auto !important;
 	color: #21759b;
 	display: block;
@@ -596,12 +591,8 @@ input[type="submit"]:hover {
 # Columns
 --------------------------------------------------------------*/
 .row {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 	padding: 20px;
 	width: 100%;
 }
@@ -3851,6 +3842,24 @@ input[type="submit"]:hover {
 	margin-right: auto;
 }
 
+@media (min-width: 768px) {
+	.gutenberg .alignfull {
+		margin-left: calc(50% - 50vw);
+		margin-right: calc(50% - 50vw);
+		width: auto;
+		max-width: 1000%;
+	}
+}
+
+@media (min-width: 768px) {
+	.gutenberg .alignwide {
+		margin-left: calc(25% - 25vw);
+		margin-right: calc(25% - 25vw);
+		width: auto;
+		max-width: 1000%;
+	}
+}
+
 /*--------------------------------------------------------------
 # Clearings
 --------------------------------------------------------------*/
@@ -3940,12 +3949,8 @@ input[type="submit"]:hover {
 }
 
 .comment-list .comment-meta {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 }
 
 .comment-list .comment-meta .comment-metadata a,
@@ -3961,15 +3966,9 @@ input[type="submit"]:hover {
 }
 
 .comment-list .comment-meta .comment-author {
-	-webkit-box-pack: start;
-	    -ms-flex-pack: start;
-	        justify-content: flex-start;
-	display: -webkit-box;
-	display: -ms-flexbox;
+	justify-content: flex-start;
 	display: flex;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	align-items: center;
 }
 
 .comment-list .comment-meta .comment-author .fn {
@@ -4113,8 +4112,7 @@ object {
 
 .main-navigation ul ul {
 	background: #F0F4FB;
-	-webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
-	        box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
 	top: 100%;
@@ -4232,12 +4230,9 @@ object {
 	top: 0;
 	width: 100%;
 	opacity: 0;
-	-webkit-transition-property: all;
 	transition-property: all;
-	-webkit-transition-duration: .3s;
-	        transition-duration: .3s;
-	-webkit-transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
-	        transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
+	transition-duration: .3s;
+	transition-timing-function: cubic-bezier(0, 1, 0.5, 1);
 }
 
 #offcanvas.toggled {
@@ -4268,10 +4263,8 @@ object {
 	display: block;
 	padding: 10px 20px;
 	margin: 10px;
-	-webkit-transition-property: all;
 	transition-property: all;
-	-webkit-transition-duration: .2s;
-	        transition-duration: .2s;
+	transition-duration: .2s;
 	-webkit-transform-style: ease-in-out;
 	        transform-style: ease-in-out;
 }
@@ -4326,16 +4319,9 @@ object {
 }
 
 #logo_nav_wrap {
-	display: -webkit-box;
-	display: -ms-flexbox;
 	display: flex;
-	-webkit-box-orient: horizontal;
-	-webkit-box-direction: normal;
-	    -ms-flex-direction: row;
-	        flex-direction: row;
-	-webkit-box-align: center;
-	    -ms-flex-align: center;
-	        align-items: center;
+	flex-direction: row;
+	align-items: center;
 	padding: 10px;
 	position: absolute;
 	top: 0;
@@ -4352,15 +4338,13 @@ object {
 
 #logo_nav_wrap.stuck {
 	background: #fff;
-	-webkit-box-shadow: 0 3px 5px 0px #dce5f6;
-	        box-shadow: 0 3px 5px 0px #dce5f6;
+	box-shadow: 0 3px 5px 0px #dce5f6;
 	padding: 10px 30px;
 	position: fixed;
 }
 
 #logo {
-	-ms-flex-item-align: start;
-	    align-self: flex-start;
+	align-self: flex-start;
 	max-width: 50px;
 }
 
@@ -4453,8 +4437,7 @@ body.custom-logo .site-description {
 
 .section {
 	background: #fff;
-	-webkit-box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.15);
-	        box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.15);
+	box-shadow: 0 0 50px 5px rgba(0, 0, 0, 0.15);
 	padding: 20px;
 	margin: 0 auto 50px;
 	overflow: hidden;
@@ -4607,9 +4590,7 @@ body.custom-logo .site-description {
 }
 
 .projects.archive-projects .row {
-	-webkit-box-align: start;
-	    -ms-flex-align: start;
-	        align-items: start;
+	align-items: start;
 }
 
 .projects.archive-projects .archive-title {
