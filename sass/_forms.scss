@@ -76,3 +76,29 @@ input[type="submit"] {
   display: inline-block;
   margin: 20px 0;
 }
+
+.nf-form-content {
+  margin-top: 30px;
+}
+
+.nf-form-hp {
+  display: none;
+}
+
+.nf-field {
+  margin-bottom: 20px;
+}
+
+.nf-field-label {
+  font-weight: bold;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.ninja-forms-req-symbol {
+  color: #e94040;
+}
+
+.nf-field-element textarea {
+  height: 200px;
+}
