@@ -89,9 +89,9 @@
 		
 		<div class="content">
 
-			<h2 class="section-title"><?php _e( 'Project Overview', 'personaltheme' ); ?></h2>
+			<h2 class="section-subtitle"><?php printf( '%s', __( 'Thoughts on the ', 'special' ) . get_the_title() . __( ' project.', 'special' ) ) ?></h2>
 
-			<h4 class="section-subtitle"><?php printf( '%s', __( 'Thoughts on the ', 'special' ) . get_the_title() . __( ' project.', 'special' ) ) ?></h4>
+			<h4 class="section-title"><?php _e( 'Project Overview', 'personaltheme' ); ?></h4>
 			
 			<div class="entry-content" itemprop="text">
 				<?php the_content(); ?>
@@ -111,10 +111,8 @@
 				
 			<?php if ( get_field( 'project_url' ) ) : ?>
 				<div class="project-link">
-					<div class="alert alert-info">
-						<p>Please note that projects may be altered by the client or another developer after they have been launched.</p>
-						<p><a href="<?php the_field( 'project_url' ); ?>" class="button" target="_blank" rel="noopener noreferrer" style="color: #fff;"><?php _e( 'View Project', 'personaltheme' ); ?></a></p>
-					</div>
+					<h4><a href="<?php the_field( 'project_url' ); ?>" target="_blank" rel="noopener noreferrer">View <?php echo get_the_title(); ?></a></h4>
+					<p>Please note that websites may be altered by the client after they have been launched. Therefore, the current state of the website may not reflect the details here.</p>
 				</div>
 			<?php endif; ?>
 

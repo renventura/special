@@ -14,58 +14,65 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	background: $color__grey;
-	color: $color__text-input;
-	border: 1px solid darken($color__grey, 10%);
-	border-radius: 3px;
-	padding: 10px;
-	width: 100%;
+  background: $color__grey;
+  color: $color__text-input;
+  border: 1px solid darken($color__grey, 10%);
+  border-radius: 3px;
+  padding: 10px;
+  width: 100%;
 
-	&:focus {
-		color: $color__text-input-focus;
-	}
+  &:focus {
+    color: $color__text-input-focus;
+  }
 }
 
 select {
-	border: 1px solid $color__border-input;
+  border: 1px solid $color__border-input;
 }
 
 textarea {
-	width: 100%;
+  width: 100%;
 }
 
 .button,
 button,
+.nf-form-content input[type="button"],
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-	border: none;
-	background: $color__background-button;
-	color: #fff;
-	line-height: 1;
-	padding: 20px;
+  border: none;
+  background: $color__background-button;
+  color: #fff;
+  line-height: 1;
+  padding: 20px;
 
-	&:hover {
-		background: lighten($color__background-button, 10%);
-	}
+  &:hover {
+    background: lighten($color__background-button, 10%);
+  }
 }
 
 .button.cta-button {
-	display: inline-block;
-	color: #fff;
-	@include gradient();
-	padding: 25px 40px;
+  display: inline-block;
+  color: #fff;
+  @include gradient();
+  padding: 25px 40px;
 
-	&:hover {
-		color: #fff;
-	}
+  &:hover {
+    color: #fff;
+  }
+}
+
+.nf-form-content input[type="button"] {
+  @extend .button.cta-button;
+  border-radius: 300px;
+  width: 100% !important;
 }
 
 .button.button-round {
-	border-radius: 300px;
+  border-radius: 300px;
 }
 
 .button.readmore {
-	display: inline-block;
-	margin: 20px 0;
+  display: inline-block;
+  margin: 20px 0;
 }

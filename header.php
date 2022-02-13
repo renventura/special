@@ -35,9 +35,13 @@
 
 			<?php
 				global $post;
-				$thumbnail = 'https://renventura.com/wp-content/uploads/2017/09/desk-apple-products.jpg';
+				$thumbnail = home_url( 'wp-content/uploads/2017/09/desk-apple-products.jpg' );
 				if ( $featured_url = get_the_post_thumbnail_url( $post->id, 'full' ) ) {
 					$thumbnail = $featured_url;
+				}
+
+				if ( is_post_type_archive( 'portfolio' ) ) {
+					$thumbnail = '';
 				}
 			?>
 			

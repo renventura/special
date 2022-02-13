@@ -44,7 +44,7 @@ get_header(); ?>
 										<div class="entry-content" itemscope itemtype="http://schema.org/CreativeWork">
 											<div class="row">
 												<div class="one-third first">
-													<a href="<?php the_permalink(); ?>" itemprop="url"><img itemprop="thumbnailUrl" src="<?php echo $thumb['url']; ?>" alt="<?php echo $thumb['alt']; ?>"></a>
+													<a href="<?php the_permalink(); ?>" itemprop="url" class="image-link"><img itemprop="thumbnailUrl" src="<?php echo $thumb['url']; ?>" width="316px" alt="<?php echo $thumb['alt']; ?>"></a>
 													<div class="archive-terms"><?php echo $terms; ?></div>
 												</div>
 												<div class="two-thirds">

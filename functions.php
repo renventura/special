@@ -79,6 +79,13 @@ if ( ! function_exists( 'special_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
 		) );
+
+		/**
+		 * Add custom image sizes.
+		 * 
+		 * @link https://developer.wordpress.org/reference/functions/add_image_size/
+		 */
+		add_image_size( 'front-page-post', 700, 518 );
 	}
 endif;
 add_action( 'after_setup_theme', 'special_setup' );
@@ -124,7 +131,10 @@ function special_scripts() {
 	wp_enqueue_script( 'special-scripts', get_template_directory_uri() . '/js/scripts.min.js', array('jquery'), '20151215', true );
 
 	// Fonts
-	wp_enqueue_style( 'oxygen', '//fonts.googleapis.com/css?family=Oxygen:300,400,700' );
+	// wp_enqueue_style( 'oxygen', '//fonts.googleapis.com/css?family=Oxygen:300,400,700' );
+	wp_enqueue_style( 'sofia-font', 'https://fonts.cdnfonts.com/css/sofia-pro' );
+	wp_enqueue_style( 'minion-font', 'https://fonts.cdnfonts.com/css/minion-pro' );
+	// wp_enqueue_style( 'outfit-font', '//fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&display=swap' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
@@ -151,6 +161,11 @@ require get_template_directory() . '/inc/template-tags.php';
  * Functions which enhance the theme by hooking into WordPress.
  */
 require get_template_directory() . '/inc/template-functions.php';
+
+/**
+ * Performance optimizations.
+ */
+require get_template_directory() . '/inc/optimizations.php';
 
 /**
  * Customizer additions.

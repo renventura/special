@@ -2,34 +2,42 @@
 @import "mixins";
 
 #iphone-imessage {
-	position: relative;
+  position: relative;
 
-	&:before {
-		background-image: url('../images/iphone-imessage.svg');
-		background-repeat: no-repeat;
-		content: " ";
-		display: block;
-		transform: rotate(12deg);
-		transform-origin: 100% 0;
-		height: 300px;
-		padding: 0;
-		margin-left: 50px;
+  &:before {
+    background-image: url("../images/iphone-imessage.svg");
+    background-repeat: no-repeat;
+    content: " ";
+    display: block;
+    transform: rotate(12deg);
+    transform-origin: 100% 0;
+    height: 300px;
+    padding: 0;
+    margin-left: 50px;
 
-		@include r(1024) {
-			position: absolute;
-			left: 0;
-			top: -200px;
-			padding: 300px;
-		}
-	}
+    @include r(1024) {
+      position: absolute;
+      left: 0;
+      top: -200px;
+      padding: 300px;
+    }
+  }
 }
 
 .service-title {
-	@include font-size(1.6);
-	text-align: center;
+  @include font-size(1.6);
+  text-align: center;
 }
 
 .service-icon {
-	max-width: 200px;
-	margin: 0 auto;
+  max-width: 200px;
+  margin: 0 auto;
+}
+
+.projects {
+  margin-top: 50px;
+
+  @include r(1024) {
+    margin-top: 100px;
+  }
 }

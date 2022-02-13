@@ -1,48 +1,50 @@
 // Rem output with px fallback
 @mixin font-size($sizeValue: 1) {
-	font-size: ($sizeValue * 16) * 1px;
-	font-size: $sizeValue * 1rem;
+  font-size: ($sizeValue * 16) * 1px;
+  font-size: $sizeValue * 1rem;
 }
 
-@mixin headline-border($width: 100px) {
-	&:after {
-		content: " ";
-		display: block;
-		border-bottom: 1px solid $color__heading;
-		width: $width;
-		margin: 30px 0;
-	}
+@mixin headline-border($width: 100px, $margin: 10px) {
+  &:after {
+    content: " ";
+    display: block;
+    border-bottom: 1px solid $color__heading;
+    width: $width;
+    margin: $margin 0;
+  }
 }
 
 // Center block
 @mixin center-block {
-	display: block;
-	margin-left: auto;
-	margin-right: auto;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 // Clearfix
 @mixin clearfix() {
-	content: "";
-	display: table;
-	table-layout: fixed;
+  content: "";
+  display: table;
+  table-layout: fixed;
 }
 
 // Clear after (not all clearfix need this also)
 @mixin clearfix-after() {
-	clear: both;
+  clear: both;
 }
 
 // Column width with margin
 @mixin column-width($numberColumns: 3) {
-	width: map-get( $columns, $numberColumns ) - ( ( $columns__margin * ( $numberColumns - 1 ) ) / $numberColumns );
+  width: map-get($columns, $numberColumns) - (($columns__margin * ($numberColumns - 1)) / $numberColumns);
 }
 
-@mixin gradient( $opacity: 1 ) {
-	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#5533ff+0,0cd7fc+100 */
-	background: rgb(85,51,255); /* Old browsers */
-	background: linear-gradient(45deg, rgba(85,51,255,$opacity) 0%,rgba(12,215,252,$opacity) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5533ff', endColorstr='#0cd7fc',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+@mixin gradient($opacity: 1) {
+  /* 
+	background: rgb(85,51,255);
+	background: linear-gradient(45deg, rgba(85,51,255,$opacity) 0%,rgba(12,215,252,$opacity) 100%); 
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#5533ff', endColorstr='#0cd7fc',GradientType=1 );
+	*/
+  background: linear-gradient(85.64deg, $color__blue 32.48%, #1cabc1 100%), linear-gradient(0deg, $color__blue, $color__blue), #ffffff;
 }
 
 /**
@@ -76,50 +78,50 @@
  * @link    https://github.com/ahmadawais/ReSass.git
  * @version 1.0.0
  */
-@mixin r( $point ) {
-	@if $point==240 {
-		@media ( min-width: 240px ) {
-			@content;
-		}
-	}
-	@if $point==320 {
-		@media ( min-width: 320px ) {
-			@content;
-		}
-	}
-	@if $point==480 {
-		@media ( min-width: 480px ) {
-			@content;
-		}
-	}
-	@if $point==600 {
-		@media ( min-width: 600px ) {
-			@content;
-		}
-	}
-	@if $point==768 {
-		@media ( min-width: 768px ) {
-			@content;
-		}
-	}
-	@if $point==1024 {
-		@media ( min-width: 1024px ) {
-			@content;
-		}
-	}
-	@if $point==1140 {
-		@media ( min-width: 1140px ) {
-			@content;
-		}
-	}
-	@if $point==1280 {
-		@media ( min-width: 1280px ) {
-			@content;
-		}
-	}
-	@if $point==1500 {
-		@media ( min-width: 1500px ) {
-			@content;
-		}
-	}
+@mixin r($point) {
+  @if $point==240 {
+    @media (min-width: 240px) {
+      @content;
+    }
+  }
+  @if $point==320 {
+    @media (min-width: 320px) {
+      @content;
+    }
+  }
+  @if $point==480 {
+    @media (min-width: 480px) {
+      @content;
+    }
+  }
+  @if $point==600 {
+    @media (min-width: 600px) {
+      @content;
+    }
+  }
+  @if $point==768 {
+    @media (min-width: 768px) {
+      @content;
+    }
+  }
+  @if $point==1024 {
+    @media (min-width: 1024px) {
+      @content;
+    }
+  }
+  @if $point==1140 {
+    @media (min-width: 1140px) {
+      @content;
+    }
+  }
+  @if $point==1280 {
+    @media (min-width: 1280px) {
+      @content;
+    }
+  }
+  @if $point==1500 {
+    @media (min-width: 1500px) {
+      @content;
+    }
+  }
 }

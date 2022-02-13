@@ -138,36 +138,44 @@ if ( ! function_exists( 'special_header_hero' ) ) :
 /**
  *	Output the post thumbnail
  */
-function special_header_hero( $args ) { ?>
+function special_header_hero( $args ) { 
+	$style = '';
+	$classes = 'hero empty';
+	
+	if ( ! empty( $args['thumbnail'] ) ) {
+		$style = "style=\"background-image: url({$args['thumbnail']})\"";
+		$classes = "hero backstretch overlay";
+	}
+	?>
 
-	<div id="hero" class="backstretch overlay" style="background-image: url('<?php echo $args['thumbnail']; ?>')">
+	<div id="hero" class="<?php echo $classes; ?>" <?php echo $style; ?>>
 		
 		<div id="hero_wrap">
 
 			<?php if ( is_front_page() ) : ?>
 
-				<h2 id="hero_title">Ren Ventura</h2>
+				<h1 id="hero_title" class="hero-title">Ren Ventura</h1>
 				
-				<div id="hero_content">Web Developer. Problem solver.</div>
+				<div id="hero_content" class="hero-content">Developer. Problem solver.</div>
 
 			<?php elseif ( is_singular() ) : ?>
 
-				<div id="hero_content">
+				<div id="hero_content" class="hero-content">
 					<?php the_excerpt(); ?>
 				</div>
 
 			<?php elseif ( is_home() ) : ?>
 
-				<h2 id="hero_title">The Blog</h2>
+				<h2 id="hero_title" class="hero-title">The Blog</h2>
 
 			<?php elseif ( is_archive() ) : ?>
 
 				<?php if ( is_archive( 'portfolio' ) && ! is_tax( 'portfolio_cat' ) ) : ?>
-					<h2 id="hero_title">Portfolio</h2>
-					<div id="hero_content">Some projects I've worked on over the years.</div>
+					<h2 id="hero_title" class="hero-title">Portfolio</h2>
+					<div id="hero_content" class="hero-content">Some projects I've worked on <span class="gradient-underline">over the years</span>.</div>
 				<?php else: ?>
-					<h2 id="hero_title"><?php echo str_ireplace( array( ': ', 'archive', 'category' ), '', get_the_archive_title() ); ?></h2>
-					<?php the_archive_description( '<div id="hero_content">', '</div>' ); ?>
+					<h2 id="hero_title" class="hero-title"><?php echo str_ireplace( array( ': ', 'archive', 'category' ), '', get_the_archive_title() ); ?></h2>
+					<?php the_archive_description( '<div id="hero_content" class="hero-content">', '</div>' ); ?>
 				<?php endif; ?>
 
 			<?php endif; ?>
