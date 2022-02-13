@@ -55,7 +55,7 @@ get_header(); ?>
 				
 			</div>
 
-			<div class="section full-width centered backstretch overlay" style="background-image: url(<?php echo home_url( 'wp-content/uploads/2017/09/programmer-imac.jpg' ); ?>);">
+			<div class="section full-width centered backstretch overlay" style="background-image: url(<?php echo home_url( 'wp-content/webp-express/webp-images/uploads/2017/09/programmer-imac.jpg.webp' ); ?>);">
 
 				<div class="content">
 					
@@ -92,7 +92,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section full-width centered backstretch overlay codeable" style="background-image: url(<?php echo home_url( 'wp-content/uploads/2018/10/codeable-header.jpg' ); ?>);">
+			<div class="section full-width centered backstretch overlay codeable" style="background-image: url(<?php echo home_url( 'wp-content/webp-express/webp-images/uploads/2018/10/codeable-header.jpg.webp' ); ?>);">
 
 				<div class="content">
 
@@ -270,7 +270,7 @@ get_header(); ?>
 
 										<div class="one-third <?php if ( $count === 0 ) echo 'first'; ?>">
 											<div class="project" itemscope itemtype="http://schema.org/CreativeWork">
-												<a href="<?php the_permalink(); ?>" itemprop="url"><img itemprop="thumbnailUrl" src="<?php echo $thumb['url']; ?>" alt="<?php echo $thumb['alt']; ?>"></a>
+												<a href="<?php the_permalink(); ?>" itemprop="url"><img itemprop="thumbnailUrl" src="<?php echo $thumb['url']; ?>" alt="<?php echo $thumb['alt']; ?>" width="363px" height="209px"></a>
 												<a href="<?php the_permalink(); ?>" itemprop="url"><h3 itemprop="title" class="archive-title"><?php the_title(); ?></h3></a>
 												<div class="archive-terms"><?php echo $terms; ?></div>
 											</div>
@@ -311,7 +311,7 @@ get_header(); ?>
 				</div>
 			</div>
 
-			<div class="section full-width backstretch overlay centered" style="background-image: url(<?php echo home_url( 'wp-content/uploads/2017/09/donuts.jpg' ); ?>);">
+			<div class="section full-width backstretch overlay centered" style="background-image: url(<?php echo home_url( 'wp-content/webp-express/webp-images/uploads/2017/09/donuts-1024x683.jpg.webp' ); ?>);">
 				
 				<div class="content">
 					
