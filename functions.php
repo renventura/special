@@ -132,8 +132,8 @@ function special_scripts() {
 
 	// Fonts
 	// wp_enqueue_style( 'oxygen', '//fonts.googleapis.com/css?family=Oxygen:300,400,700' );
-	wp_enqueue_style( 'sofia-font', 'https://fonts.cdnfonts.com/css/sofia-pro' );
-	wp_enqueue_style( 'minion-font', 'https://fonts.cdnfonts.com/css/minion-pro' );
+	// wp_enqueue_style( 'sofia-font', 'https://fonts.cdnfonts.com/css/sofia-pro' );
+	// wp_enqueue_style( 'minion-font', 'https://fonts.cdnfonts.com/css/minion-pro' );
 	// wp_enqueue_style( 'outfit-font', '//fonts.googleapis.com/css2?family=Outfit:wght@100;400;700&display=swap' );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
