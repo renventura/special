@@ -251,6 +251,7 @@ th {
 	font-style: normal;
 	font-weight: 400;
 	src: local("Minion Pro"), url("../fonts/minion-pro/MinionPro-Regular.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -258,6 +259,7 @@ th {
 	font-style: italic;
 	font-weight: 400;
 	src: local("Minion Pro"), url("../fonts/minion-pro/MinionPro-It.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -265,6 +267,7 @@ th {
 	font-style: normal;
 	font-weight: 500;
 	src: local("Minion Pro"), url("../fonts/minion-pro/MinionPro-Medium.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -272,6 +275,7 @@ th {
 	font-style: italic;
 	font-weight: 500;
 	src: local("Minion Pro"), url("../fonts/minion-pro/MinionPro-MediumIt.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -279,6 +283,7 @@ th {
 	font-style: normal;
 	font-weight: 600;
 	src: local("Minion Pro"), url("../fonts/minion-pro/MinionPro-Semibold.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -286,6 +291,7 @@ th {
 	font-style: italic;
 	font-weight: 600;
 	src: local("Minion Pro"), url("../fonts/minion-pro/MinionPro-SemiboldIt.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -293,6 +299,7 @@ th {
 	font-style: normal;
 	font-weight: 700;
 	src: local("Minion Pro"), url("../fonts/minion-pro/MinionPro-BoldCn.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -300,6 +307,7 @@ th {
 	font-style: normal;
 	font-weight: 700;
 	src: local("Minion Pro"), url("../fonts/minion-pro/MinionPro-Bold.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -307,6 +315,7 @@ th {
 	font-style: italic;
 	font-weight: 700;
 	src: local("Minion Pro"), url("../fonts/minion-pro/MinionPro-BoldCnIt.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -314,6 +323,7 @@ th {
 	font-style: italic;
 	font-weight: 700;
 	src: local("Minion Pro"), url("../fonts/minion-pro/MinionPro-BoldIt.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -321,6 +331,7 @@ th {
 	font-style: normal;
 	font-weight: 400;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Regular Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -328,6 +339,7 @@ th {
 	font-style: italic;
 	font-weight: 400;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Regular Italic Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -335,6 +347,7 @@ th {
 	font-style: normal;
 	font-weight: 250;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro ExtraLight Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -342,6 +355,7 @@ th {
 	font-style: normal;
 	font-weight: 250;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro UltraLight Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -349,6 +363,7 @@ th {
 	font-style: italic;
 	font-weight: 250;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro ExtraLight Italic Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -356,6 +371,7 @@ th {
 	font-style: italic;
 	font-weight: 250;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro UltraLight Italic Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -363,6 +379,7 @@ th {
 	font-style: normal;
 	font-weight: 300;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Light Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -370,6 +387,7 @@ th {
 	font-style: italic;
 	font-weight: 300;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Light Italic Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -377,6 +395,7 @@ th {
 	font-style: normal;
 	font-weight: 500;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Medium Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -384,6 +403,7 @@ th {
 	font-style: italic;
 	font-weight: 500;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Medium Italic Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -391,6 +411,7 @@ th {
 	font-style: normal;
 	font-weight: 600;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Semi Bold Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -398,6 +419,7 @@ th {
 	font-style: italic;
 	font-weight: 600;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Semi Bold Italic Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -405,6 +427,7 @@ th {
 	font-style: normal;
 	font-weight: 700;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Bold Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -412,6 +435,7 @@ th {
 	font-style: italic;
 	font-weight: 700;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Bold Italic Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -419,6 +443,7 @@ th {
 	font-style: normal;
 	font-weight: 900;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Black Az.woff") format("woff");
+	font-display: swap;
 }
 
 @font-face {
@@ -426,6 +451,7 @@ th {
 	font-style: italic;
 	font-weight: 900;
 	src: local("Sofia Pro"), url("../fonts/sofia-pro/Sofia Pro Black Italic Az.woff") format("woff");
+	font-display: swap;
 }
 
 /*--------------------------------------------------------------
@@ -602,7 +628,7 @@ big {
 
 h1,
 h2 {
-	font-family: "Minion Pro", Arial, sans-serif;
+	font-family: "Minion Pro", Times, serif;
 }
 
 h1,
