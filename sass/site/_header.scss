@@ -48,7 +48,7 @@
 
 #logo {
   align-self: flex-start;
-  max-width: 50px;
+  max-width: 80px;
   @include r(1024) {
     // Above 1024px
     display: inline-block;
