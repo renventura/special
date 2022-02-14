@@ -35,7 +35,8 @@
 
 			<?php
 				global $post;
-				$thumbnail = home_url( 'wp-content/webp-express/webp-images/uploads/2017/09/desk-apple-products.jpg.webp' );
+				// $thumbnail = home_url( 'wp-content/webp-express/webp-images/uploads/2017/09/desk-apple-products.jpg.webp' );
+				$thumbnail = '';
 				if ( $featured_url = get_the_post_thumbnail_url( $post->id, 'full' ) ) {
 					$thumbnail = $featured_url;
 				}

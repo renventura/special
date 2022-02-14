@@ -142,6 +142,10 @@ function special_header_hero( $args ) {
 	$style = '';
 	$classes = 'hero empty';
 	
+	if ( is_front_page() ) {
+		$classes = "hero overlay";
+	}
+
 	if ( ! empty( $args['thumbnail'] ) ) {
 		$style = "style=\"background-image: url({$args['thumbnail']})\"";
 		$classes = "hero backstretch overlay";
