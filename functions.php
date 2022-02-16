@@ -86,6 +86,7 @@ if ( ! function_exists( 'special_setup' ) ) :
 		 * @link https://developer.wordpress.org/reference/functions/add_image_size/
 		 */
 		add_image_size( 'front-page-post', 700, 518 );
+		add_image_size( 'post-summary', 970, 836 );
 	}
 endif;
 add_action( 'after_setup_theme', 'special_setup' );

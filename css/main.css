@@ -718,9 +718,9 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-	background: #f9f9f9;
+	background: #f9f9fa;
 	color: #666;
-	border: 1px solid #e0e0e0;
+	border: 1px solid #dddde3;
 	border-radius: 3px;
 	padding: 10px;
 	width: 100%;
@@ -1387,7 +1387,7 @@ input[type="submit"]:hover {
 
 .bypostauthor {
 	display: block;
-	background: #f9f9f9;
+	background: #f9f9fa;
 	padding: 20px !important;
 }
 
@@ -1509,7 +1509,7 @@ object {
 }
 
 .main-navigation ul ul {
-	background: #f9f9f9;
+	background: #f9f9fa;
 	box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
 	float: left;
 	position: absolute;
@@ -1620,7 +1620,7 @@ object {
 }
 
 #offcanvas {
-	background: #f9f9f9;
+	background: #f9f9fa;
 	position: fixed;
 	height: 100vh;
 	z-index: 9999999;
@@ -1639,7 +1639,7 @@ object {
 }
 
 #offcanvas #close-offcanvas {
-	background: #adadad;
+	background: #a6a6b4;
 	width: 100%;
 	margin-bottom: 20px;
 }
@@ -1676,7 +1676,7 @@ object {
 #offcanvas #primary_menu .children {
 	margin-left: 20px;
 	padding-left: 0;
-	background: #f9f9f9;
+	background: #f9f9fa;
 }
 
 #offcanvas #primary_menu .sub-menu a,
@@ -2055,7 +2055,7 @@ body.custom-logo .site-description {
 .projects .project .portfolio-category {
 	color: #091d2e;
 	display: inline-block;
-	background: #f9f9f9;
+	background: #f9f9fa;
 	border-radius: 3px;
 	padding: 10px;
 	text-align: center;
@@ -2082,6 +2082,103 @@ body.custom-logo .site-description {
 
 .not-singular .entry-content {
 	max-width: 100%;
+}
+
+.blog {
+	background-color: #f9f9fa;
+}
+
+.blog .hero.backstretch .backstretch-item img {
+	-webkit-filter: blur(1.2rem);
+	        filter: blur(1.2rem);
+}
+
+.posted-on {
+	color: #95939d;
+	font-size: 12px;
+	font-weight: 300;
+	letter-spacing: 2px;
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+.blog-post:first-of-type {
+	box-shadow: 0px 40px 70px rgba(43, 51, 68, 0.15);
+}
+
+.blog-post .hentry {
+	max-width: 800px;
+	margin: 0 auto;
+}
+
+.blog-post .readmore {
+	display: block;
+	text-align: center;
+}
+
+.blog-post.has-fi {
+	padding: 0;
+}
+
+.blog-post.has-fi .hentry {
+	margin: 0;
+	max-width: 100%;
+}
+
+.blog-post.has-fi .readmore {
+	display: inline;
+}
+
+.blog-post.has-fi .entry-header {
+	text-align: left;
+}
+
+.blog-post.has-fi .entry-title {
+	margin: 0;
+}
+
+.blog-post.has-fi .entry-content {
+	margin-top: 10px;
+}
+
+@media (min-width: 1024px) {
+	.blog-post.has-fi .post-summary {
+		display: flex;
+	}
+}
+
+.blog-post.has-fi .post-summary__image, .blog-post.has-fi .post-summary__content {
+	flex-basis: 100%;
+}
+
+.blog-post.has-fi .post-summary__content {
+	padding: 50px;
+}
+
+.blog-post.has-fi .post-summary__image {
+	position: relative;
+	-webkit-transform: translateZ(0);
+	        transform: translateZ(0);
+	overflow: hidden;
+}
+
+.blog-post.has-fi .post-summary__image a {
+	display: block;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	-webkit-transform: scale(1);
+	        transform: scale(1);
+	transition: -webkit-transform ease-in-out 0.5s;
+	transition: transform ease-in-out 0.5s;
+	transition: transform ease-in-out 0.5s, -webkit-transform ease-in-out 0.5s;
+}
+
+.blog-post.has-fi .post-summary__image a:hover {
+	-webkit-transform: scale(1.1);
+	        transform: scale(1.1);
 }
 
 .single-portfolio .project-link {
@@ -2141,7 +2238,7 @@ body.custom-logo .site-description {
 # Footer
 --------------------------------------------------------------*/
 .pre-footer {
-	background: #f9f9f9;
+	background: #f9f9fa;
 	padding: 100px 25px;
 	position: relative;
 	text-align: center;
