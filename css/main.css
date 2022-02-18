@@ -1744,7 +1744,8 @@ object {
 
 #logo {
 	align-self: flex-start;
-	max-width: 80px;
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 @media (min-width: 1024px) {
@@ -1757,6 +1758,10 @@ body.custom-logo .site-title,
 body.custom-logo .site-description {
 	position: absolute;
 	left: -999999px;
+}
+
+.site-branding .custom-logo {
+	width: 180px;
 }
 
 .site-title {
