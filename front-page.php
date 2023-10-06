@@ -35,14 +35,14 @@ get_header(); ?>
 								Hey, I'm Ren
 							</h4>
 
-							<h2 class="section-title"><span class="gradient-underline">Web and Software Developer</span> in the U.S.A.</h2>
+							<h2 class="section-title"><span class="gradient-underline">Web and Software Engineer</span> in the U.S.A.</h2>
 
 							<p class="">
-								<span class="bold">TLDR:</span> Full-stack developer. Making buttons look nice, integrating 3rd party APIs, and everything in between.
+								<span class="bold">TLDR:</span> Making buttons look nice, integrating 3rd party APIs, and everything in between.
 							</p>
 
 							<p class="">
-								<span class="bold">Fancy:</span> I develop web and software solutions to solve complexities for modern organizations. My primary goal is to put more money in your pocket by developing technology solutions that fit your business.
+								<span class="bold">Fancy:</span> I develop web and software solutions to solve complexities for modern organizations. My primary goal is to put more money in your pocket by engineering technology solutions that fit your business.
 							</p>
 
 						</div>
@@ -319,7 +319,7 @@ get_header(); ?>
 						
 						<div class="one-half first">
 							<h3 class="section-title">About Me</h3>
-							<p>Senior WordPress Developer.</p>
+							<p>Senior Software Engineer.</p>
 							<p>Started developing software in 2012.</p>
 							<p>Went to law school. I prefer Javascript.</p>
 						</div>
